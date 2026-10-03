@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Janu Ahirwar – Mechanical Engineer</title>
+<meta name="description" content="Portfolio of Janu Ahirwar, B.Tech Mechanical Engineering student: CNC/VMC programming, SolidWorks, AutoCAD, Python, data analytics and AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--t:#f2f2f2;--m:#8b8b8b;--a:#ff5a1f;--l:rgba(255,255,255,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:400 16px/1.7 'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--t);overflow-x:hidden;padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit}p{margin-bottom:1rem}ul{list-style:none}
+.mono{font:500 .72rem/1.6 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase}
+.a{color:var(--a)}.m{color:var(--m)}
+i{font-style:normal;color:var(--a)}
+#pb{position:fixed;top:0;left:0;height:2px;width:0;background:var(--a);z-index:99}
+#ld{position:fixed;inset:0;z-index:200;background:var(--bg);display:flex;flex-direction:column;justify-content:center;padding:0 12vw;animation:out .6s 2.2s forwards}
+@keyframes out{to{opacity:0;visibility:hidden}}
+#ld .mono{letter-spacing:.3em}
+#ld b{font:700 clamp(4.5rem,22vw,9rem)/1 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:.5rem 0 1.8rem}
+#ld b i,.cur{animation:bk 1s steps(1) infinite}
+@keyframes bk{50%{opacity:0}}
+nav{position:fixed;top:2px;left:0;right:0;z-index:50;min-height:calc(56px + env(safe-area-inset-top,0px));padding:env(safe-area-inset-top,0px) 5vw 0;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,10,.7);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-bottom:1px solid var(--l)}
+.logo{font-weight:700;text-decoration:none;font-size:1.1rem}
+nav ul{display:flex;gap:1.6rem}
+nav li a{text-decoration:none;color:var(--m);transition:color .2s}
+nav li a:hover{color:var(--a)}
+#bg{display:none;background:none;border:1px solid var(--l);color:var(--t);padding:.3rem .8rem;cursor:pointer}
+main,footer{position:relative}
+.sec{max-width:1100px;margin:0 auto;padding:6rem 5vw;border-top:1px solid var(--l)}
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;border:0;padding-top:8rem}
+h1{font-size:clamp(3.4rem,13vw,8rem);line-height:.95;letter-spacing:-.045em;font-weight:700;margin:1rem 0 1.6rem}
+h2{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.05;letter-spacing:-.035em;font-weight:700;margin:.5rem 0 1rem}
+h3{font-size:1.15rem;line-height:1.35;font-weight:500;margin-bottom:.2rem}
+.lead{max-width:600px;color:var(--m);font-size:1.05rem}
+.ach{max-width:600px;border-left:2px solid var(--a);padding:.2rem 0 .2rem 1.1rem;margin:1.2rem 0 2rem}
+.ach p{margin:.2rem 0 0}
+.row{display:flex;gap:.8rem;flex-wrap:wrap;align-items:center;margin-top:1rem}
+.btn{display:inline-block;padding:.8rem 1.5rem;border:1px solid var(--l);text-decoration:none;font-weight:500;font-size:.9rem;transition:all .25s}
+.btn.p{background:var(--a);border-color:var(--a);color:#0a0a0a}
+.btn:hover{border-color:var(--a);transform:translateY(-3px)}
+.row.mono a{text-decoration:none;color:var(--m);margin-right:1rem}
+.row.mono a:hover{color:var(--a)}
+.sub{max-width:640px;color:var(--m);margin-bottom:2.5rem}
+.card{border:1px solid var(--l);padding:1.8rem;margin-bottom:1.3rem;transition:border-color .3s,transform .3s,background .3s}
+.card:hover{border-color:var(--a);background:rgba(255,90,31,.04);transform:translateY(-5px)}
+.tag{display:inline-block;margin:.2rem .3rem .2rem 0;padding:.15rem .7rem;border:1px solid var(--l);font-size:.78rem;color:var(--m)}
+.lk{display:inline-block;margin:.6rem 1.2rem 0 0;color:var(--a);text-decoration:none;font-weight:500}
+.lk:hover{text-decoration:underline}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2.2rem 2rem}
+.sk li{padding:.45rem 0;border-bottom:1px solid var(--l);color:var(--m);font-size:.95rem}
+.sk h3{margin:.3rem 0 .6rem}
+.ex{display:grid;grid-template-columns:200px 1fr;gap:1rem 2rem;padding:1.6rem 0;border-bottom:1px solid var(--l)}
+.ex ul li{position:relative;padding-left:1.1rem;color:var(--m);font-size:.95rem;margin:.2rem 0}
+.ex ul li:before{content:"–";position:absolute;left:0;color:var(--a)}
+.big{display:inline-block;font-size:clamp(1.3rem,4.5vw,2.6rem);font-weight:700;letter-spacing:-.03em;text-decoration:none;word-break:break-all;margin:1rem 0}
+.big:hover{color:var(--a)}
+.fu{opacity:0;translate:0 30px;transition:opacity .7s,translate .7s,transform .3s,border-color .3s,background .3s}
+.fu.v{opacity:1;translate:0 0}
+footer{padding:2rem 5vw;border-top:1px solid var(--l);text-align:center}
+@media(max-width:760px){nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:1rem;padding:1.2rem 5vw;background:rgba(10,10,10,.96);border-bottom:1px solid var(--l)}nav ul.o{display:flex}#bg{display:block}.ex{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.fu{opacity:1;translate:none;transition:none}html{scroll-behavior:auto}#ld{animation-duration:.01s}}
+</style></head><body>
+<div id="ld"><div class="mono a" style="max-width:16ch">Initializing portfolio</div><b>hello<i>_</i></b><div class="mono m">Janu Ahirwar 2026</div></div>
+<div id="pb"></div>
+<nav><a class="logo" href="#hero">JA<i>_</i></a>
+<ul id="mn" class="mono"><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#certs">Certs</a></li><li><a href="#contact">Contact</a></li></ul>
+<button id="bg" class="mono" aria-label="Menu">Menu</button></nav>
+<main>
+<section id="hero" class="sec">
+<p class="mono a"><span id="tt"></span><span class="cur">_</span></p>
+<h1>Janu<br>Ahirwar<i>.</i></h1>
+<p class="lead">B.Tech Mechanical Engineering student at the intersection of Mechanical Engineering, Design, Technology, Data Analytics and AI, with hands-on CNC/VMC programming experience.</p>
+<div class="ach"><span class="mono a">Best achievement</span><p>Designed and fabricated a portable wind turbine (HAWT) that generated ~7–8 V at ~955 RPM, enough for LED lighting and mobile charging, with a cut-in speed of ~2.5–3 m/s.</p></div>
+<div class="row"><a class="btn p" href="#contact">Get in touch</a><a class="btn" href="resume.pdf" download>Download resume</a><a class="btn" href="#projects">View projects</a></div>
+<div class="row mono"><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/januahirwar/">LinkedIn ↗</a><a target="_blank" rel="noopener" href="https://github.com/janu200512">GitHub ↗</a></div>
+</section>
+
+<section id="about" class="sec"><p class="mono a">// about</p><h2>About me<i>.</i></h2>
+<div class="fu m" style="max-width:780px">
+<p>Hi, I'm Janu Ahirwar, a B.Tech Mechanical Engineering student at University Institute of Technology, RGPV, Shivpuri, Madhya Pradesh. My interests lie at the intersection of Mechanical Engineering, Design, Technology, Data Analytics, and AI.</p>
+<p>I have completed the Mastercard Advisors &amp; Consulting Services Virtual Experience, gaining exposure to professional problem-solving and consulting-based work. I'm also undergoing practical training in AutoCAD and SolidWorks at Tech Cluster Design, Indore, developing skills in mechanical design and drafting: 2D technical drawings, dimensioning, annotations, layers, drawing standards, 3D part modelling, and assemblies.</p>
+<p>Alongside mechanical design, I'm exploring technology, data analytics, and AI through hands-on projects. My recent project, MediStock-AI, is an AI-assisted healthcare inventory and supply-chain solution that uses data and machine learning to forecast demand, identify stock-out risks, and support inventory replenishment decisions.</p>
+<p>I'm continuously learning, building, and experimenting with new technologies, with the goal of combining my engineering foundation with modern technology to develop practical solutions for real-world problems.</p>
+</div></section>
+
+<section id="projects" class="sec"><p class="mono a">// projects</p><h2>Selected work<i>.</i></h2>
+<div class="card fu"><p class="mono a">AI · Python</p><h3 style="font-size:1.6rem">MediStock-AI</h3><p class="m">AI-Assisted Healthcare Inventory &amp; Supply Chain Management System</p>
+<p class="m" style="font-size:.95rem">An AI-assisted inventory solution that helps healthcare facilities make better inventory and replenishment decisions. It analyzes historical inventory data to forecast short-term demand, monitor stock levels, calculate days of stock cover, identify potential stock-out risks, and suggest replenishment quantities. Built with a Random Forest model for demand forecasting; the dashboard turns inventory data into clear insights for timely reorders.</p>
+<span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Random Forest</span><br>
+<span class="tag">Inventory dashboard</span><span class="tag">Demand forecasting</span><span class="tag">Stock-out risk</span><span class="tag">Days of stock cover</span><span class="tag">Replenishment recommendations</span><span class="tag">Downloadable reorder plan</span><br>
+<a class="lk" target="_blank" rel="noopener" href="https://medistock-ai-dsqkpc4rxqfg8ysruy7lgm.streamlit.app/">Live demo ↗</a><a class="lk" target="_blank" rel="noopener" href="https://github.com/janu200512/MediStock-AI">GitHub ↗</a></div>
+<div class="card fu"><p class="mono a">Mechanical · B.Tech</p><h3 style="font-size:1.6rem">Miniature Wind Turbine</h3><p class="m">Off-Grid Power Generation | B.Tech Mechanical Engineering</p>
+<p class="m" style="font-size:.95rem">Designed and fabricated a portable Horizontal Axis Wind Turbine (HAWT) for low-wind conditions, focusing on mechanical design, power generation, and performance testing. The turbine achieved a cut-in speed of approximately 2.5–3 m/s and generated ~7–8 V at ~955 RPM, demonstrating its potential for small-scale off-grid power applications.</p>
+<span class="tag">Wind Energy</span><span class="tag">HAWT Design</span><span class="tag">DC Generator</span><span class="tag">Voltage Regulator</span><span class="tag">Battery System</span><span class="tag">Machine Design</span><br>
+<a class="lk" target="_blank" rel="noopener" href="https://docs.google.com/document/u/0/d/19VvEz2gQKhddVWAdHkQgnJxs6v-flQzc/mobilebasic">Project details ↗</a>
+<p class="mono m" style="margin:.8rem 0 0">Team: <a class="a" target="_blank" rel="noopener" href="https://www.linkedin.com/in/divyanshpatankar">Divyansh Patankar</a> · <a class="a" target="_blank" rel="noopener" href="https://www.linkedin.com/in/abhishek-mourya-7729202">Abhishek Mourya</a></p></div>
+</section>
+
+<section id="skills" class="sec"><p class="mono a">// skills</p><h2>Skills &amp; software stack<i>.</i></h2>
+<p class="sub">A working knowledge that spans the shop floor and the source code editor — every tool below is one I actually use.</p>
+<div class="g3">
+<div class="sk fu"><span class="mono a">01</span><h3>Mechanical Design</h3><ul><li>SolidWorks</li><li>AutoCAD 2D &amp; 3D</li><li>GD&amp;T</li><li>Machine Design</li><li>Technical Drafting</li></ul></div>
+<div class="sk fu"><span class="mono a">02</span><h3>Manufacturing</h3><ul><li>Supply Chain Management</li><li>CNC Programming</li><li>VMC Programming</li><li>Quality Standards</li><li>Process Documentation</li></ul></div>
+<div class="sk fu"><span class="mono a">03</span><h3>Programming</h3><ul><li>Python</li><li>JavaScript</li><li>HTML5</li><li>CSS</li></ul></div>
+<div class="sk fu"><span class="mono a">04</span><h3>Version Control</h3><ul><li>Git</li><li>GitHub</li><li>GitHub Copilot</li></ul></div>
+<div class="sk fu"><span class="mono a">05</span><h3>Productivity</h3><ul><li>MS Excel</li><li>MS Word</li><li>Technical Reporting</li></ul></div>
+<div class="sk fu"><span class="mono a">06</span><h3>AI Assistants</h3><ul><li>Claude.ai</li><li>ChatGPT</li><li>Google Gemini</li></ul></div>
+</div></section>
+
+<section id="experience" class="sec"><p class="mono a">// experience</p><h2>Experience<i>.</i></h2>
+<div class="ex fu"><div class="mono m">Aug 2026 – Sep 2026</div><div><h3>Advisors Consulting &amp; Service – Virtual Internship</h3><p class="a">Mastercard</p>
+<ul><li>Completed a job simulation involving data-driven marketing analysis for Mastercard.</li><li>Analyzed a comprehensive data set using statistical analysis and comparative study to identify key trends in sales and customer engagement.</li><li>Developed and presented a strategic marketing plan based on data insights, communicating complex data to non-technical stakeholders through clear narratives and visualizations.</li><li>Used data analytics tools to produce actionable recommendations for enhanced ROI and marketing practices.</li></ul>
+<p class="mono m" style="margin:.8rem 0 0">IT Management · Data Analysis · Data Visualization Tools · Strategic Communications · Strategic Planning · Critical Thinking · Business Analysis</p>
+<a class="lk" target="_blank" rel="noopener" href="https://www.theforage.com/completion-certificates/mfxGwGDp6WkQmtmTf/DZxgGgvMB6cEtEyJg_mfxGwGDp6WkQmtmTf_4wRCxK7e4ARLiqc77_1790587779161_completion_certificate.pdf">View certificate ↗</a></div></div>
+<div class="ex fu"><div class="mono m">Feb 2024 – Jul 2024<br>6 months</div><div><h3>CNC Programmer – Internship</h3><p class="a">SPM Autocomp System Pvt. Ltd, Pithampur, Dhar (M.P.)</p><ul><li>Hands-on experience in CNC programming and machine operating.</li><li>Worked on industrial projects involving precision machining.</li></ul></div></div>
+<div class="ex fu"><div class="mono m">Jan 2024 – Feb 2024<br>2 months</div><div><h3>Vocational Training &amp; Internship</h3><p class="a">GAIL (India) Limited, Guna, Madhya Pradesh</p><ul><li>Training in CNC programming and manufacturing engineering.</li><li>Learned industrial practices, documentation, and quality standards.</li></ul></div></div>
+</section>
+
+<section id="education" class="sec"><p class="mono a">// education</p><h2>Education<i>.</i></h2>
+<div class="ex fu"><div class="mono m">2024 – Pursuing</div><div><h3>Bachelor of Technology – Mechanical Engineering</h3><p class="a">University Institute of Technology, RGPV, Shivpuri, Madhya Pradesh</p><p class="m">CGPA: 5.67</p></div></div>
+<div class="ex fu"><div class="mono m">2021 – 2024</div><div><h3>Diploma – Mechanical Engineering</h3><p class="a">Government Polytechnic College, Ashok Nagar, Madhya Pradesh</p><p class="m">CGPA: 7.27</p></div></div>
+</section>
+
+<section id="certs" class="sec"><p class="mono a">// certifications</p><h2>Certifications<i>.</i></h2>
+<div class="ex fu"><div class="mono m">Sep 2026</div><div><h3>Advisors &amp; Consulting Services Job Simulation</h3><p class="a">Mastercard</p><p class="mono m" style="margin:0">ID: 6ab9e6ba5bf1182d20e40e48</p><a class="lk" target="_blank" rel="noopener" href="https://www.theforage.com/completion-certificates/mfxGwGDp6WkQmtmTf/DZxgGgvMB6cEtEyJg_mfxGwGDp6WkQmtmTf_4wRCxK7e4ARLiqc77_1790587779161_completion_certificate.pdf">View certificate ↗</a></div></div>
+<div class="ex fu"><div class="mono m">Aug 2025</div><div><h3>Data Analytics Job Simulation</h3><p class="a">Deloitte Australia</p><p class="mono m" style="margin:0">ID: kCnjfkwbRSLB6HRrw</p><a class="lk" target="_blank" rel="noopener" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_4wRCxK7e4ARLiqc77_1756532515224_completion_certificate.pdf">View certificate ↗</a></div></div>
+<div class="ex fu"><div class="mono m">Aug 2025</div><div><h3>ESG Job Simulation</h3><p class="a">Tata Group</p><p class="mono m" style="margin:0">ID: jKAC4ihHxeu4PErd3</p><a class="lk" target="_blank" rel="noopener" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/N8Muuhk6XsXgMTeu2_ifobHAoMjQs9s6bKS_4wRCxK7e4ARLiqc77_1756487052579_completion_certificate.pdf">View certificate ↗</a></div></div>
+<div class="ex fu"><div class="mono m">Sep 2025</div><div><h3>Cybersecurity Job Simulation</h3><p class="a">Mastercard</p><p class="mono m" style="margin:0">ID: rLgsSjhQqddqkmtkT</p><a class="lk" target="_blank" rel="noopener" href="https://www.theforage.com/completion-certificates/mfxGwGDp6WkQmtmTf/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_4wRCxK7e4ARLiqc77_1758491030106_completion_certificate.pdf">View certificate ↗</a></div></div>
+<div class="ex fu"><div class="mono m">Ongoing</div><div><h3>AutoCAD &amp; SolidWorks Training</h3><p class="a">TechCluster, Indore</p></div></div>
+</section>
+
+<section id="contact" class="sec"><p class="mono a">// contact</p><h2>Let's talk<i>.</i></h2>
+<div class="fu"><p class="m">Mechanical Engineering student exploring design, data analytics and AI.</p>
+<a class="big" href="mailto:januahirwar44@gmail.com">januahirwar44@gmail.com</a>
+<div class="row mono"><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/januahirwar/">LinkedIn ↗</a><a target="_blank" rel="noopener" href="https://github.com/janu200512">GitHub ↗</a></div></div>
+</section>
+</main>
+<footer class="mono m">&copy; 2026 Janu Ahirwar</footer>
+<script>
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+addEventListener('scroll',()=>{const d=document.documentElement;$('#pb').style.width=d.scrollTop/(d.scrollHeight-d.clientHeight)*100+'%'},{passive:true});
+$('#bg').onclick=()=>$('#mn').classList.toggle('o');
+$$('#mn a').forEach(a=>a.onclick=()=>$('#mn').classList.remove('o'));
+if(window.IntersectionObserver){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}}),{threshold:.1});$$('.fu').forEach(e=>io.observe(e))}else $$('.fu').forEach(e=>e.classList.add('v'));
+const R=['mechanical engineering student','cnc / vmc programmer','cad designer','data & ai explorer'],tt=$('#tt');let ri=0,ci=0,dl=0;
+(function tick(){const r=R[ri];if(!dl){tt.textContent=r.slice(0,++ci);if(ci==r.length){dl=1;return setTimeout(tick,1700)}setTimeout(tick,70)}else{tt.textContent=r.slice(0,--ci);if(!ci){dl=0;ri=(ri+1)%R.length;return setTimeout(tick,300)}setTimeout(tick,40)}})();
+</script></body></html>
