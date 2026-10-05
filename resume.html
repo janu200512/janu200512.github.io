@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janu Ahirwar | Resume</title>
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --line: #dfe3ec;
+        --accent: #0f172a;
+        --accent-2: #2563eb;
+        --tag: #eef4ff;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 32px auto;
+        background: var(--card);
+        border: 1px solid var(--line);
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 32px 42px 18px;
+        border-bottom: 2px solid var(--line);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.4rem;
+        letter-spacing: -0.04em;
+      }
+
+      .subtitle {
+        margin-top: 8px;
+        color: var(--accent-2);
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+
+      .contact {
+        text-align: right;
+        font-size: 0.95rem;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .contact a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 2.2fr 1fr;
+        gap: 0;
+        padding: 0 0 24px;
+      }
+
+      .main, .side {
+        padding: 28px 32px;
+      }
+
+      .main {
+        border-right: 1px solid var(--line);
+      }
+
+      .side {
+        background: #fafbff;
+      }
+
+      section {
+        margin-bottom: 28px;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .summary {
+        margin: 0;
+        color: var(--text);
+      }
+
+      .job, .edu, .project {
+        margin-bottom: 18px;
+      }
+
+      .job-header, .edu-header, .project-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+        margin-bottom: 4px;
+      }
+
+      .job-title, .edu-title, .project-title {
+        font-weight: 700;
+        font-size: 1.05rem;
+      }
+
+      .company, .place {
+        color: var(--accent-2);
+        font-weight: 600;
+      }
+
+      .date {
+        color: var(--muted);
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+
+      ul {
+        margin: 8px 0 0 18px;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 6px;
+        color: var(--text);
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        list-style: none;
+        margin: 12px 0 0 0;
+      }
+
+      .tag-list li {
+        background: var(--tag);
+        border: 1px solid #dbeafe;
+        color: var(--accent);
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 0.78rem;
+        margin: 0;
+      }
+
+      .side h3 {
+        margin: 0 0 10px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent);
+      }
+
+      .skills-list, .cert-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .skills-list li, .cert-list li {
+        margin-bottom: 8px;
+        color: var(--text);
+      }
+
+      .skills-group {
+        margin-bottom: 24px;
+      }
+
+      .note {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 760px) {
+        .header, .content {
+          grid-template-columns: 1fr;
+          display: block;
+        }
+
+        .header {
+          padding: 24px 20px 16px;
+        }
+
+        .main, .side {
+          padding: 20px;
+          border: none;
+        }
+
+        .contact {
+          text-align: left;
+          margin-top: 16px;
+        }
+
+        .job-header, .edu-header, .project-header {
+          display: block;
+        }
+
+        .date {
+          display: block;
+          margin-top: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div>
+          <h1>Janu Ahirwar</h1>
+          <div class="subtitle">Mechanical Engineer | CAD & CNC Specialist | Data Analyst & AI Explorer</div>
+        </div>
+
+        <div class="contact">
+          <div><a href="mailto:januahirwar44@gmail.com">januahirwar44@gmail.com</a></div>
+          <div><a href="https://www.linkedin.com/in/januahirwar/" target="_blank" rel="noreferrer">linkedin.com/in/januahirwar</a></div>
+          <div><a href="https://github.com/janu200512" target="_blank" rel="noreferrer">github.com/janu200512</a></div>
+        </div>
+      </header>
+
+      <div class="content">
+        <main class="main">
+          <section>
+            <h2>Profile</h2>
+            <p class="summary">
+              Motivated Mechanical Engineering student with hands-on experience in CAD design, CNC/VMC programming,
+              and manufacturing processes. Skilled in SolidWorks, AutoCAD, GD&amp;T, technical drafting, and industrial
+              production workflows. Interested in applying engineering fundamentals with data analytics and AI to solve
+              practical problems in manufacturing, supply chain, and healthcare systems.
+            </p>
+          </section>
+
+          <section>
+            <h2>Experience</h2>
+
+            <div class="job">
+              <div class="job-header">
+                <div>
+                  <div class="job-title">CNC Programmer Intern</div>
+                  <div class="company">SPM Autocomp System Pvt. Ltd.</div>
+                </div>
+                <div class="date">Feb 2024 – Jul 2024</div>
+              </div>
+              <ul>
+                <li>Worked in a production environment on CNC/VMC programming and manufacturing-related operations.</li>
+                <li>Assisted in understanding machining processes, tooling requirements, and operational workflow.</li>
+                <li>Contributed to technical documentation and practical process learning in a manufacturing setup.</li>
+                <li>Gained exposure to quality standards, machine operation, and production efficiency.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <div>
+                  <div class="job-title">Vocational Training & Internship</div>
+                  <div class="company">GAIL (India) Limited</div>
+                </div>
+                <div class="date">Jan 2024 – Feb 2024</div>
+              </div>
+              <ul>
+                <li>Completed industrial training in a large-scale engineering environment.</li>
+                <li>Learned about plant operations, industrial systems, and practical engineering applications.</li>
+                <li>Developed understanding of safety standards, technical systems, and production workflows.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <div class="job-header">
+                <div>
+                  <div class="job-title">Advisors Consulting &amp; Service Virtual Internship</div>
+                  <div class="company">Mastercard</div>
+                </div>
+                <div class="date">2026</div>
+              </div>
+              <ul>
+                <li>Completed a virtual internship focused on business analysis and consulting-style problem-solving.</li>
+                <li>Worked with data-driven insights and developed structured analytical thinking.</li>
+                <li>Strengthened communication, problem-solving, and strategic reasoning skills.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Projects</h2>
+
+            <div class="project">
+              <div class="project-header">
+                <div>
+                  <div class="project-title">MediStock-AI</div>
+                  <div class="place">AI-Assisted Healthcare Inventory &amp; Supply Chain Management System</div>
+                </div>
+              </div>
+              <ul>
+                <li>Developed an AI-assisted inventory and demand forecasting system for healthcare operations.</li>
+                <li>Built with Python, Streamlit, Pandas, and Scikit-learn for data analysis and forecasting.</li>
+                <li>Implemented features for stock-out risk analysis, demand prediction, and days-of-stock coverage.</li>
+              </ul>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Streamlit</li>
+                <li>Pandas</li>
+                <li>Scikit-learn</li>
+                <li>Machine Learning</li>
+              </ul>
+            </div>
+
+            <div class="project">
+              <div class="project-header">
+                <div>
+                  <div class="project-title">Miniature Wind Turbine (HAWT)</div>
+                  <div class="place">Off-Grid Power Generation Project</div>
+                </div>
+              </div>
+              <ul>
+                <li>Designed and fabricated a portable Horizontal Axis Wind Turbine for low-wind conditions.</li>
+                <li>Performed performance evaluation and assessed power generation capability for practical use.</li>
+                <li>Demonstrated understanding of mechanical design, power generation, and applied engineering systems.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Education</h2>
+
+            <div class="edu">
+              <div class="edu-header">
+                <div>
+                  <div class="edu-title">B.Tech in Mechanical Engineering</div>
+                  <div class="place">University Institute of Technology, RGPV, Shivpuri</div>
+                </div>
+                <div class="date">2024 – Pursuing</div>
+              </div>
+            </div>
+
+            <div class="edu">
+              <div class="edu-header">
+                <div>
+                  <div class="edu-title">Diploma in Mechanical Engineering</div>
+                  <div class="place">Government Polytechnic College, Ashok Nagar</div>
+                </div>
+                <div class="date">2021 – 2024</div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <aside class="side">
+          <div class="skills-group">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+              <li>SolidWorks</li>
+              <li>AutoCAD 2D/3D</li>
+              <li>GD&amp;T</li>
+              <li>Machine Design</li>
+              <li>Technical Drafting</li>
+              <li>CNC/VMC Programming</li>
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Scikit-learn</li>
+              <li>Streamlit</li>
+              <li>Git &amp; GitHub</li>
+              <li>MS Excel</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+              <li>Mastercard – Advisors &amp; Consulting Services Job Simulation</li>
+              <li>Deloitte Australia – Data Analytics Job Simulation</li>
+              <li>Tata Group – ESG Job Simulation</li>
+              <li>Mastercard – Cybersecurity Job Simulation</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Core Strengths</h3>
+            <ul class="skills-list">
+              <li>Problem Solving</li>
+              <li>Manufacturing Knowledge</li>
+              <li>Data Analysis</li>
+              <li>Technical Communication</li>
+              <li>Learning &amp; Adaptability</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Interest Areas</h3>
+            <p class="note">Mechanical Design, Industrial Automation, Supply Chain Analytics, AI for Healthcare, Data-Driven Engineering Solutions</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
