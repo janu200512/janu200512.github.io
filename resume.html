@@ -1,412 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Janu Ahirwar | Resume</title>
-    <style>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Janu Ahirwar - Resume (Balanced)</title>
+<style>
       :root {
-        --bg: #f5f7fb;
-        --card: #ffffff;
-        --text: #1f2937;
-        --muted: #6b7280;
-        --line: #dfe3ec;
-        --accent: #0f172a;
-        --accent-2: #2563eb;
-        --tag: #eef4ff;
+        --bg-body: #eef2f6;
+        --card-bg: #ffffff;
+        --text-main: #1e293b;
+        --text-muted: #475569;
+        --primary: #0f172a;
+        --accent: #1d4ed8;
+        --accent-light: #eff6ff;
+        --border-color: #cbd5e1;
+        --tag-bg: #f1f5f9;
+        --tag-text: #0f172a;
+        --kw-highlight: #fef08a;
       }
 
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
-      body {
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
         margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-      }
-
-      .page {
-        max-width: 980px;
-        margin: 32px auto;
-        background: var(--card);
-        border: 1px solid var(--line);
-        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-      }
-
-      .header {
-        display: flex;
-        justify-content: space-between;
-        gap: 24px;
-        padding: 32px 42px 18px;
-        border-bottom: 2px solid var(--line);
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 2.4rem;
-        letter-spacing: -0.04em;
-      }
-
-      .subtitle {
-        margin-top: 8px;
-        color: var(--accent-2);
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-      }
-
-      .contact {
-        text-align: right;
-        font-size: 0.95rem;
-        color: var(--muted);
-        line-height: 1.8;
-      }
-
-      .contact a {
-        color: var(--accent);
-        text-decoration: none;
-      }
-
-      .content {
-        display: grid;
-        grid-template-columns: 2.2fr 1fr;
-        gap: 0;
-        padding: 0 0 24px;
-      }
-
-      .main, .side {
-        padding: 28px 32px;
-      }
-
-      .main {
-        border-right: 1px solid var(--line);
-      }
-
-      .side {
-        background: #fafbff;
-      }
-
-      section {
-        margin-bottom: 28px;
-      }
-
-      h2 {
-        margin: 0 0 14px;
-        font-size: 1rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--accent);
-      }
-
-      .summary {
-        margin: 0;
-        color: var(--text);
-      }
-
-      .job, .edu, .project {
-        margin-bottom: 18px;
-      }
-
-      .job-header, .edu-header, .project-header {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        align-items: baseline;
-        margin-bottom: 4px;
-      }
-
-      .job-title, .edu-title, .project-title {
-        font-weight: 700;
-        font-size: 1.05rem;
-      }
-
-      .company, .place {
-        color: var(--accent-2);
-        font-weight: 600;
-      }
-
-      .date {
-        color: var(--muted);
-        font-size: 0.9rem;
-        white-space: nowrap;
-      }
-
-      ul {
-        margin: 8px 0 0 18px;
         padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg-body);
+        color: var(--text-main);
+        line-height: 1.5;
+        font-size: 14px;
       }
 
-      li {
-        margin-bottom: 6px;
-        color: var(--text);
-      }
-
-      .tag-list {
+      /* Control Bar (Hidden when printing) */
+      .toolbar {
+        max-width: 920px;
+        margin: 20px auto 0;
+        padding: 12px 20px;
+        background: #ffffff;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      }
+
+      .toolbar-title {
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
         gap: 8px;
-        list-style: none;
-        margin: 12px 0 0 0;
       }
 
-      .tag-list li {
-        background: var(--tag);
-        border: 1px solid #dbeafe;
+      .toolbar-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .btn {
+        background: var(--primary);
+        color: #ffffff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .btn:hover {
+        background: var(--accent);
+      }
+
+      .btn-secondary {
+        background: var(--accent-light);
         color: var(--accent);
-        border-radius: 999px;
-        padding: 6px 10px;
-        font-size: 0.78rem;
-        margin: 0;
+        border: 1px solid #bfdbfe;
       }
 
-      .side h3 {
-        margin: 0 0 10px;
-        font-size: 0.9rem;
+      .btn-secondary:hover {
+        background: #dbeafe;
+      }
+
+      /* Page Shell */
+      .resume-container {
+        max-width: 920px;
+        margin: 20px auto 40px;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+        border-radius: 2px;
+      }
+
+      /* Resume Header */
+      header.resume-header {
+        padding: 36px 40px 24px;
+        border-bottom: 2px solid var(--primary);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+      }
+
+      .header-main h1 {
+        margin: 0;
+        font-size: 2.2rem;
+        letter-spacing: -0.03em;
+        color: var(--primary);
         text-transform: uppercase;
-        letter-spacing: 0.08em;
+        font-weight: 800;
+      }
+
+      .header-main .title-tag {
+        margin-top: 6px;
+        font-size: 0.95rem;
+        font-weight: 700;
         color: var(--accent);
+        letter-spacing: 0.02em;
       }
 
-      .skills-list, .cert-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      .contact-block {
+        text-align: right;
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.7;
       }
 
-      .skills-list li, .cert-list li {
-        margin-bottom: 8px;
-        color: var(--text);
+      .contact-block a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 500;
       }
 
-      .skills-group {
+      .contact-block a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+
+      /* Two Column Content Grid */
+      .resume-body {
+        display: grid;
+        grid-template-columns: 2.1fr 1fr;
+        min-height: 800px;
+      }
+
+      .main-content {
+        padding: 28px 32px 36px 40px;
+        border-right: 1px solid var(--border-color);
+      }
+
+      .sidebar {
+        padding: 28px 32px 36px 24px;
+        background-color: #fafbfc;
+      }
+
+      /* Section Styling */
+      section {
         margin-bottom: 24px;
       }
 
-      .note {
-        color: var(--muted);
-        font-size: 0.92rem;
+      section:last-child {
+        margin-bottom: 0;
       }
 
-      @media (max-width: 760px) {
-        .header, .content {
-          grid-template-columns: 1fr;
-          display: block;
+      h2.section-title {
+        margin: 0 0 12px 0;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--primary);
+        border-bottom: 1.5px solid var(--border-color);
+        padding-bottom: 4px;
+        font-weight: 800;
+      }
+
+      .profile-text {
+        margin: 0;
+        color: var(--text-main);
+        font-size: 0.92rem;
+        text-align: justify;
+      }
+
+      /* Experience & Project Cards */
+      .entry {
+        margin-bottom: 18px;
+      }
+
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 3px;
+      }
+
+      .entry-title {
+        font-size: 0.98rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .entry-sub {
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .entry-date {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      ul.bullets {
+        margin: 6px 0 0 16px;
+        padding: 0;
+        list-style-type: disc;
+      }
+
+      ul.bullets li {
+        margin-bottom: 5px;
+        color: var(--text-main);
+        font-size: 0.88rem;
+        line-height: 1.5;
+      }
+
+      ul.bullets li strong {
+        color: var(--primary);
+      }
+
+      /* Sidebar Elements */
+      .skill-group {
+        margin-bottom: 20px;
+      }
+
+      .skill-group h3 {
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--text-muted);
+        margin: 0 0 8px 0;
+        font-weight: 700;
+      }
+
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .skill-tags li {
+        background: var(--tag-bg);
+        border: 1px solid #e2e8f0;
+        color: var(--tag-text);
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.78rem;
+        font-weight: 600;
+      }
+
+      .simple-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .simple-list li {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+        line-height: 1.4;
+      }
+
+      .simple-list li strong {
+        display: block;
+        color: var(--primary);
+      }
+
+      .simple-list li span {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+
+      /* Keyword Highlight Effect */
+      .ats-kw {
+        transition: background-color 0.3s ease;
+      }
+      body.highlight-keywords .ats-kw {
+        background-color: var(--kw-highlight);
+        padding: 0 2px;
+        border-radius: 2px;
+      }
+
+      /* Targeted Filter Rules */
+      body.filter-mech .tech-item {
+        display: none !important;
+      }
+      body.filter-tech .mech-item {
+        display: none !important;
+      }
+
+      /* Print Optimization Styles */
+      @media print {
+        @page {
+          size: A4 portrait;
+          margin: 10mm 12mm;
         }
 
-        .header {
-          padding: 24px 20px 16px;
+        body {
+          background: #ffffff;
+          color: #000000;
+          font-size: 11pt;
         }
 
-        .main, .side {
-          padding: 20px;
+        .toolbar {
+          display: none !important;
+        }
+
+        .resume-container {
+          box-shadow: none;
           border: none;
+          margin: 0;
+          max-width: 100%;
+          width: 100%;
         }
 
-        .contact {
+        header.resume-header {
+          padding: 0 0 16px 0;
+          border-bottom: 2px solid #000000;
+        }
+
+        .resume-body {
+          grid-template-columns: 2.1fr 1fr;
+          min-height: auto;
+        }
+
+        .main-content {
+          padding: 16px 20px 0 0;
+          border-right: 1px solid #cccccc;
+        }
+
+        .sidebar {
+          padding: 16px 0 0 20px;
+          background: transparent;
+        }
+
+        h2.section-title {
+          border-bottom: 1px solid #000000;
+          color: #000000;
+        }
+
+        .entry-title, .entry-sub, .header-main h1 {
+          color: #000000;
+        }
+
+        .contact-block a {
+          color: #000000;
+          text-decoration: none;
+        }
+
+        .skill-tags li {
+          border: 1px solid #999;
+          background: transparent;
+          color: #000;
+        }
+
+        .ats-kw {
+          background-color: transparent !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .resume-body {
+          grid-template-columns: 1fr;
+        }
+        .main-content {
+          border-right: none;
+          padding: 20px;
+        }
+        .sidebar {
+          padding: 20px;
+        }
+        header.resume-header {
+          flex-direction: column;
+          padding: 24px 20px;
+        }
+        .contact-block {
           text-align: left;
-          margin-top: 16px;
-        }
-
-        .job-header, .edu-header, .project-header {
-          display: block;
-        }
-
-        .date {
-          display: block;
-          margin-top: 4px;
         }
       }
     </style>
-  </head>
-  <body>
-    <div class="page">
-      <header class="header">
-        <div>
-          <h1>Janu Ahirwar</h1>
-          <div class="subtitle">Mechanical Engineer | CAD & CNC Specialist | Data Analyst & AI Explorer</div>
-        </div>
-
-        <div class="contact">
-          <div><a href="mailto:januahirwar44@gmail.com">januahirwar44@gmail.com</a></div>
-          <div><a href="https://www.linkedin.com/in/januahirwar/" target="_blank" rel="noreferrer">linkedin.com/in/januahirwar</a></div>
-          <div><a href="https://github.com/janu200512" target="_blank" rel="noreferrer">github.com/janu200512</a></div>
-        </div>
-      </header>
-
-      <div class="content">
-        <main class="main">
-          <section>
-            <h2>Profile</h2>
-            <p class="summary">
-              Motivated Mechanical Engineering student with hands-on experience in CAD design, CNC/VMC programming,
-              and manufacturing processes. Skilled in SolidWorks, AutoCAD, GD&amp;T, technical drafting, and industrial
-              production workflows. Interested in applying engineering fundamentals with data analytics and AI to solve
-              practical problems in manufacturing, supply chain, and healthcare systems.
-            </p>
-          </section>
-
-          <section>
-            <h2>Experience</h2>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-title">CNC Programmer Intern</div>
-                  <div class="company">SPM Autocomp System Pvt. Ltd.</div>
-                </div>
-                <div class="date">Feb 2024 – Jul 2024</div>
-              </div>
-              <ul>
-                <li>Worked in a production environment on CNC/VMC programming and manufacturing-related operations.</li>
-                <li>Assisted in understanding machining processes, tooling requirements, and operational workflow.</li>
-                <li>Contributed to technical documentation and practical process learning in a manufacturing setup.</li>
-                <li>Gained exposure to quality standards, machine operation, and production efficiency.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-title">Vocational Training & Internship</div>
-                  <div class="company">GAIL (India) Limited</div>
-                </div>
-                <div class="date">Jan 2024 – Feb 2024</div>
-              </div>
-              <ul>
-                <li>Completed industrial training in a large-scale engineering environment.</li>
-                <li>Learned about plant operations, industrial systems, and practical engineering applications.</li>
-                <li>Developed understanding of safety standards, technical systems, and production workflows.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <div class="job-header">
-                <div>
-                  <div class="job-title">Advisors Consulting &amp; Service Virtual Internship</div>
-                  <div class="company">Mastercard</div>
-                </div>
-                <div class="date">2026</div>
-              </div>
-              <ul>
-                <li>Completed a virtual internship focused on business analysis and consulting-style problem-solving.</li>
-                <li>Worked with data-driven insights and developed structured analytical thinking.</li>
-                <li>Strengthened communication, problem-solving, and strategic reasoning skills.</li>
-              </ul>
-            </div>
-          </section>
-
-          <section>
-            <h2>Projects</h2>
-
-            <div class="project">
-              <div class="project-header">
-                <div>
-                  <div class="project-title">MediStock-AI</div>
-                  <div class="place">AI-Assisted Healthcare Inventory &amp; Supply Chain Management System</div>
-                </div>
-              </div>
-              <ul>
-                <li>Developed an AI-assisted inventory and demand forecasting system for healthcare operations.</li>
-                <li>Built with Python, Streamlit, Pandas, and Scikit-learn for data analysis and forecasting.</li>
-                <li>Implemented features for stock-out risk analysis, demand prediction, and days-of-stock coverage.</li>
-              </ul>
-              <ul class="tag-list">
-                <li>Python</li>
-                <li>Streamlit</li>
-                <li>Pandas</li>
-                <li>Scikit-learn</li>
-                <li>Machine Learning</li>
-              </ul>
-            </div>
-
-            <div class="project">
-              <div class="project-header">
-                <div>
-                  <div class="project-title">Miniature Wind Turbine (HAWT)</div>
-                  <div class="place">Off-Grid Power Generation Project</div>
-                </div>
-              </div>
-              <ul>
-                <li>Designed and fabricated a portable Horizontal Axis Wind Turbine for low-wind conditions.</li>
-                <li>Performed performance evaluation and assessed power generation capability for practical use.</li>
-                <li>Demonstrated understanding of mechanical design, power generation, and applied engineering systems.</li>
-              </ul>
-            </div>
-          </section>
-
-          <section>
-            <h2>Education</h2>
-
-            <div class="edu">
-              <div class="edu-header">
-                <div>
-                  <div class="edu-title">B.Tech in Mechanical Engineering</div>
-                  <div class="place">University Institute of Technology, RGPV, Shivpuri</div>
-                </div>
-                <div class="date">2024 – Pursuing</div>
-              </div>
-            </div>
-
-            <div class="edu">
-              <div class="edu-header">
-                <div>
-                  <div class="edu-title">Diploma in Mechanical Engineering</div>
-                  <div class="place">Government Polytechnic College, Ashok Nagar</div>
-                </div>
-                <div class="date">2021 – 2024</div>
-              </div>
-            </div>
-          </section>
-        </main>
-
-        <aside class="side">
-          <div class="skills-group">
-            <h3>Skills</h3>
-            <ul class="skills-list">
-              <li>SolidWorks</li>
-              <li>AutoCAD 2D/3D</li>
-              <li>GD&amp;T</li>
-              <li>Machine Design</li>
-              <li>Technical Drafting</li>
-              <li>CNC/VMC Programming</li>
-              <li>Python</li>
-              <li>Pandas</li>
-              <li>Scikit-learn</li>
-              <li>Streamlit</li>
-              <li>Git &amp; GitHub</li>
-              <li>MS Excel</li>
-            </ul>
-          </div>
-
-          <div class="skills-group">
-            <h3>Certifications</h3>
-            <ul class="cert-list">
-              <li>Mastercard – Advisors &amp; Consulting Services Job Simulation</li>
-              <li>Deloitte Australia – Data Analytics Job Simulation</li>
-              <li>Tata Group – ESG Job Simulation</li>
-              <li>Mastercard – Cybersecurity Job Simulation</li>
-            </ul>
-          </div>
-
-          <div class="skills-group">
-            <h3>Core Strengths</h3>
-            <ul class="skills-list">
-              <li>Problem Solving</li>
-              <li>Manufacturing Knowledge</li>
-              <li>Data Analysis</li>
-              <li>Technical Communication</li>
-              <li>Learning &amp; Adaptability</li>
-            </ul>
-          </div>
-
-          <div class="skills-group">
-            <h3>Interest Areas</h3>
-            <p class="note">Mechanical Design, Industrial Automation, Supply Chain Analytics, AI for Healthcare, Data-Driven Engineering Solutions</p>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </body>
-</html>
+<style>
+      /* print compaction so the balanced version fits one A4 page */
+      @media print {
+        @page { margin: 7mm 9mm; }
+        html { background: #ffffff !important; }
+        body { font-size: 9pt; line-height: 1.35; }
+        header.resume-header { padding-bottom: 6px; }
+        .header-main h1 { font-size: 1.7rem; }
+        .main-content { padding-top: 8px; padding-right: 14px; }
+        .sidebar { padding-top: 8px; padding-left: 14px; }
+        section { margin-bottom: 9px; }
+        h2.section-title { margin-bottom: 7px; }
+        .entry { margin-bottom: 7px; }
+        .skill-group { margin-bottom: 8px; }
+        ul.bullets { margin-top: 3px; }
+        ul.bullets li { margin-bottom: 1px; font-size: 0.84rem; line-height: 1.35; }
+        .simple-list li { margin-bottom: 4px; }
+      }
+    </style>
+</head><body>
+<div class="toolbar"><div class="toolbar-title"><span>Janu Ahirwar - Resume (Balanced)</span></div>
+<div class="toolbar-group"><button class="btn" onclick="window.print()">Save as PDF / Print</button></div></div>
+<div class="resume-container">
+<header class="resume-header"><div class="header-main"><h1>Janu Ahirwar</h1>
+<div class="subtitle title-tag">Mechanical Engineering Student | CAD &amp; CNC Programming | Data &amp; AI</div></div><div class="contact-block"><div>Madhya Pradesh, India</div><div>+91 7389804691</div><div><a href="mailto:januahirwar44@gmail.com">januahirwar44@gmail.com</a></div><div><a href="https://www.linkedin.com/in/januahirwar/" target="_blank">linkedin.com/in/januahirwar</a></div><div><a href="https://github.com/janu200512" target="_blank">github.com/janu200512</a></div></div></header>
+<div class="resume-body"><main class="main-content"><section><h2 class="section-title">Professional Summary</h2><p class="profile-text">Mechanical Engineering student with CNC/VMC programming experience from two industrial internships and practical training in CAD design (SolidWorks, AutoCAD). Combines engineering fundamentals (GD&amp;T, machine design) with Python and data analytics; built MediStock-AI, a machine-learning demand-forecasting tool for healthcare inventory.</p></section><section><h2 class="section-title">Work &amp; Industrial Experience</h2><div class="entry"><div class="entry-header"><div><div class="entry-title">Advisors Consulting &amp; Services Virtual Internship (Job Simulation)</div><div class="entry-sub">Mastercard</div></div><div class="entry-date">Aug 2026 – Sep 2026</div></div><ul class="bullets"><li>Analyzed a comprehensive data set using statistical analysis and comparative study to identify key trends in sales and customer engagement.</li><li>Developed and presented a strategic marketing plan based on data insights, communicating findings to non-technical stakeholders through clear narratives and visualizations.</li><li>Utilized data analytics tools to produce actionable recommendations for improving ROI and marketing practices.</li></ul></div><div class="entry"><div class="entry-header"><div><div class="entry-title">CNC Programmer Intern</div><div class="entry-sub">SPM Autocomp System Pvt. Ltd., Pithampur, Dhar (M.P.)</div></div><div class="entry-date">Feb 2024 – Jul 2024</div></div><ul class="bullets"><li>Gained hands-on experience in CNC programming and machine operating.</li><li>Worked on industrial projects involving precision machining.</li></ul></div><div class="entry"><div class="entry-header"><div><div class="entry-title">Vocational Training &amp; Internship</div><div class="entry-sub">GAIL (India) Limited, Guna (M.P.)</div></div><div class="entry-date">Jan 2024 – Feb 2024</div></div><ul class="bullets"><li>Trained in CNC programming and manufacturing engineering.</li><li>Learned industrial practices, documentation, and quality standards.</li></ul></div></section><section><h2 class="section-title">Engineering Projects</h2><div class="entry"><div class="entry-header"><div><div class="entry-title">MediStock-AI — AI-Assisted Healthcare Inventory Management</div><div class="entry-sub">Python | Scikit-learn | Streamlit | Pandas | Random Forest</div></div><div class="entry-date"><a href="https://github.com/janu200512/MediStock-AI" style="color:inherit">GitHub</a> | <a href="https://medistock-ai-dsqkpc4rxqfg8ysruy7lgm.streamlit.app/" style="color:inherit">Live Demo</a></div></div><ul class="bullets"><li>Developed an AI-assisted inventory web application in Python that forecasts short-term demand and helps healthcare facilities make better replenishment decisions.</li><li>Trained a Machine Learning model (<strong>Random Forest</strong>) on historical inventory data to forecast demand; calculated days of stock cover and flagged potential stock-out risks.</li><li>Built an interactive Streamlit dashboard with replenishment quantity recommendations and a downloadable reorder plan; deployed as a live demo.</li></ul></div><div class="entry"><div class="entry-header"><div><div class="entry-title">Miniature Wind Turbine — Off-Grid Power Generation</div><div class="entry-sub">B.Tech Minor Project | HAWT Design | DC Generator | Voltage Regulator | Battery System</div></div><div class="entry-date"><a href="https://docs.google.com/document/d/1_pBIVK27JKzFua8tto_pg1vXng73eTAEc-ub9Ynpg8M/edit?usp=drivesdk" style="color:inherit">Project Details</a></div></div><ul class="bullets"><li>Designed and fabricated a portable Horizontal Axis Wind Turbine (HAWT) for off-grid power generation in low-wind conditions (team project).</li><li>Calculated wind power, Betz limit, tip speed ratio (TSR), RPM, and efficiency; integrated a low-RPM DC generator, voltage regulator, and battery system.</li><li>Tested under varying wind speeds: cut-in speed of approx. <strong>2.5–3 m/s</strong>; generated approx. <strong>7–8 V at ~955 RPM</strong>, sufficient for LED lighting and mobile charging.</li></ul></div></section><section><h2 class="section-title">Education</h2><div class="entry"><div class="entry-header"><div><div class="entry-title">B.Tech in Mechanical Engineering</div><div class="entry-sub">University Institute of Technology, RGPV, Shivpuri</div></div><div class="entry-date">2024 – Pursuing</div></div></div><div class="entry"><div class="entry-header"><div><div class="entry-title">Diploma in Mechanical Engineering</div><div class="entry-sub">Govt. Polytechnic College, Ashok Nagar</div></div><div class="entry-date">2021 – 2024</div></div></div></section></main><aside class="sidebar"><div class="skill-group"><h3>Mechanical &amp; Design</h3><ul class="skill-tags"><li>SolidWorks</li><li>AutoCAD 2D/3D</li><li>GD&amp;T</li><li>CNC / VMC Programming</li><li>Machine Design</li><li>Technical Drafting</li><li>Quality Standards</li><li>Process Documentation</li><li>Supply Chain Management</li></ul></div><div class="skill-group"><h3>Data &amp; Software</h3><ul class="skill-tags"><li>Python</li><li>Pandas</li><li>Scikit-Learn</li><li>Streamlit</li><li>JavaScript</li><li>HTML5 / CSS</li><li>Git / GitHub</li><li>MS Excel</li><li>MS Word</li><li>Data Analysis</li></ul></div><div class="skill-group"><h3>AI Tools</h3><ul class="skill-tags"><li>GitHub Copilot</li><li>Claude.ai</li><li>ChatGPT</li><li>Google Gemini</li></ul></div><div class="skill-group"><h3>Certifications</h3><ul class="simple-list"><li><strong>Advisors &amp; Consulting Services Job Simulation</strong><span>Mastercard, Sep 2026</span></li><li><strong>Data Analytics Job Simulation</strong><span>Deloitte Australia, Aug 2025</span></li><li><strong>ESG Job Simulation</strong><span>Tata Group, Aug 2025</span></li><li><strong>Cybersecurity Job Simulation</strong><span>Mastercard, Sep 2025</span></li><li><strong>AutoCAD &amp; SolidWorks Training</strong><span>TechCluster, Indore (ongoing)</span></li></ul></div><div class="skill-group"><h3>Core Competencies</h3><ul class="skill-tags"><li>Problem Solving</li><li>Critical Thinking</li><li>Research</li><li>Communication</li><li>Technical Reporting</li></ul></div><div class="skill-group"><h3>Domain Focus</h3><p style="font-size:0.8rem;color:var(--text-muted);margin:0;line-height:1.5;">Precision Manufacturing, Renewable Energy (Wind), AI in Supply Chain, Mechanical Design.</p></div></aside></div>
+</div>
+</body></html>
