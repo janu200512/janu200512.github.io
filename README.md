@@ -45,11 +45,11 @@ I am a B.Tech Mechanical Engineering student at **University Institute of Techno
 * Built with **Python, Streamlit, Pandas, Scikit-learn**.
 * 🔗 [Live Demo](https://medistock-ai-dsqkpc4rxqfg8ysruy7lgm.streamlit.app/) | [Repository](https://github.com/janu200512/MediStock-AI)
 
-### 2. 🌀 [Miniature Wind Turbine (HAWT)](https://docs.google.com/document/u/0/d/19VvEz2gQKhddVWAdHkQgnJxs6v-flQzc/mobilebasic)
-> **Off-Grid Power Generation Project**
-* Designed and fabricated a portable Horizontal Axis Wind Turbine for low-wind conditions.
-* Achieved a cut-in speed of 2.5–3 m/s, generating **~7–8 V at ~955 RPM**.
-* 🔗 [Project Details](https://docs.google.com/document/d/1_pBIVK27JKzFua8tto_pg1vXng73eTAEc-ub9Ynpg8M/edit?usp=drivesdk)
+### 2. 🌀[Hydroelectric Power Plant (Academic Project)](https://docs.google.com/document/u/0/d/1Ttv7jt3EtTBT42P7ll07FidVAzgbEG39kvy78DLO4z8/mobilebasic)
+> **Hydropower Systems, Renewable Energy, Turbine Technology, Energy Conversion, Technical Documentation**
+* Studied and analyzed the working of a hydroelectric power plant.
+* Prepared project documentation and design analysis focusing on renewable energy.
+* 🔗 [Project Details](https://lnkd.in/dJgcqsjv)
 
 ---
 
